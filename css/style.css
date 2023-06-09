@@ -1,2 +1,51 @@
 /* font-family: 'Inter', sans-serif; */
 /* font-family: 'Work Sans', sans-serif; */
+.container{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+}
+/* header */
+header{
+    background: #262626;
+    padding: 47px 327px;
+    max-width: inherit;
+    width: inherit;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav{
+    display: flex;
+   
+}
+.navul{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;  
+
+}
+.navli{ 
+font-family: 'Work Sans', sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+}
+li:nth-child(1) a:nth-child(1){
+    color: #DCB47A;
+}
+.shopping{
+    display: flex;
+    justify-content: flex-end;
+    width: 39px;
+    margin-left: 400px;
+
+}
+
+.fa-bag-shopping{
+    font-size: 32px;
+    color: #FFFFFF;   
+}
