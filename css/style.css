@@ -1,12 +1,15 @@
 /* font-family: 'Inter', sans-serif; */
 /* font-family: 'Work Sans', sans-serif; */
-.container{
+.container {
     max-width: 1920px;
     width: 100%;
     margin: auto;
+
 }
+
 /* header */
-header{
+header {
+    position: absolute;
     background: #262626;
     padding: 47px 327px;
     max-width: inherit;
@@ -16,28 +19,33 @@ header{
     left: 50%;
     transform: translateX(-50%);
 }
-nav{
+
+nav {
     display: flex;
-   
-}
-.navul{
-    width: 650px;
-    display: flex;
-    justify-content: space-between;  
 
 }
-.navli{ 
-font-family: 'Work Sans', sans-serif;
-font-weight: 600;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-color: #FFFFFF;
+
+.navul {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+
 }
-li:nth-child(1) a:nth-child(1){
+
+.navli {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+li:nth-child(1) a:nth-child(1) {
     color: #DCB47A;
 }
-.shopping{
+
+.shopping {
     display: flex;
     justify-content: flex-end;
     width: 39px;
@@ -45,7 +53,102 @@ li:nth-child(1) a:nth-child(1){
 
 }
 
-.fa-bag-shopping{
+.fa-bag-shopping {
     font-size: 32px;
-    color: #FFFFFF;   
+    color: #FFFFFF;
+}
+
+/* section1 */
+.section1 {
+    margin-top: 120px;
+    position: relative;
+    z-index: -1;
+
+
+
+}
+
+.title {
+    position: absolute;
+    width: 1128px;
+    top: 20%;
+    left: 25%;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 96px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 24px 30px;
+    gap: 8px;
+    position: absolute;
+    width: 463px;
+    height: 71px;
+    left: 43%;
+    top: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+
+}
+
+.searchP {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.fa-magnifying-glass {
+    font-size: 30px;
+    margin-left: 220px;
+    /* აქაც მარჯინით მომიწია გაკეთება justify content-ი არ მუშაობდა ბლოკურიაო წერდა არადა მიწერია დისპლეი ფლექი */
+}
+/* section2 */
+.section2{
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* padding: 30px 41px; */
+    /* background-color: #DCB47A; */
+    margin-top: 245px;
+}
+
+.title1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 88px;
+    color: #081323;
+}
+
+.box1{
+display: flex;
+flex-wrap: wrap;
+width: 390px;
+border: 2px solid #DCB47A;
+}
+.image1{
+    padding: 30px 41px 54px;
+}
+.boxli{
+    margin-bottom: 17px;
+}
+.ulbox{
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: -0.05em;
+color: #000000;
+margin-bottom: 30px;
+margin-left: 30px;
 }
