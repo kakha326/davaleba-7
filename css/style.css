@@ -154,11 +154,13 @@ margin-left: 30px;
 }
 /* footer */
 footer{
+/*  აქ 100% ს რო ვუწერ არ გადის მაინც */
+position: absolute;
 width: 100%;
 background: #262626;
 margin-top: 245px;
 text-align: center;
-padding: 60px 620px;
+padding: 60px 350px;
 }
 .title2{
 font-family: 'Work Sans', sans-serif;
