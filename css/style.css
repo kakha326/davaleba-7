@@ -9,27 +9,24 @@
 
 /* header */
 header {
-    position: absolute;
     background: #262626;
-    padding: 47px 327px;
+    padding: 47px 320px;
     max-width: inherit;
     width: inherit;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-}
-
-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 
 }
 
 .navul {
-    width: 650px;
     display: flex;
-    justify-content: space-between;
-
+    column-gap: 68px;
 }
 
 .navli {
@@ -41,16 +38,8 @@ nav {
     color: #FFFFFF;
 }
 
-li:nth-child(1) a:nth-child(1) {
+li:nth-child(1) a {
     color: #DCB47A;
-}
-
-.shopping {
-    display: flex;
-    justify-content: flex-end;
-    width: 39px;
-    margin-left: 400px;
-
 }
 
 .fa-bag-shopping {
@@ -60,19 +49,22 @@ li:nth-child(1) a:nth-child(1) {
 
 /* section1 */
 .section1 {
-    margin-top: 120px;
+    height: 1080px;
     position: relative;
-    z-index: -1;
+    top: 116px;
+}
 
-
-
+.section_photo {
+    width: 100%;
+    height: 100%;
 }
 
 .title {
     position: absolute;
-    width: 1128px;
+    width: 68%;
     top: 20%;
-    left: 22%;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: 700;
     font-size: 82px;
     line-height: 96px;
@@ -82,19 +74,18 @@ li:nth-child(1) a:nth-child(1) {
 
 .search {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 24px 30px;
-    gap: 8px;
     position: absolute;
-    width: 463px;
-    height: 71px;
-    left: 44%;
+    width: 30%;
     top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(10px);
-    border-radius: 50px;
-
 }
 
 .searchP {
@@ -107,19 +98,15 @@ li:nth-child(1) a:nth-child(1) {
 }
 
 .fa-magnifying-glass {
+    color: white;
     font-size: 30px;
-    margin-left: 220px;
-    /* აქაც მარჯინით მომიწია გაკეთება justify content-ი არ მუშაობდა ბლოკურიაო წერდა არადა მიწერია დისპლეი ფლექი */
 }
-/* section2 */
-.section2{
-    width: 1280px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px   ;
-    margin: auto;
-    margin-top: 245px;
 
+/* section2 */
+.section2 {
+    width: 80%;
+    margin: 245px auto;
+    /* background-color: chartreuse; */
 }
 
 .title1 {
@@ -128,66 +115,84 @@ li:nth-child(1) a:nth-child(1) {
     font-size: 75px;
     line-height: 88px;
     color: #081323;
+    margin-bottom: 81px;
 }
 
-.box1{
-display: flex;
-flex-wrap: wrap;
-width: 390px;
-border: 2px solid #DCB47A;
+.cards {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
 }
-.image1{
-    padding: 30px 41px 54px;
+
+
+
+
+.box1 {
+    width: 32%;
+    height: 388px;
+    padding: 30px 41px;
+    border: 2px solid #DCB47A;
 }
-.boxli{
-    margin-bottom: 17px;
+
+.image1 {
+    width: 100%;
+    height: 225px;
+    margin-bottom: 50px;
 }
-.ulbox{
-font-family: 'Inter', sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: -0.05em;
-color: #000000;
-margin-bottom: 30px;
-margin-left: 30px;
+
+.title_cart {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+
+
+.price,
+.title_cart {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #000000;
 }
 /* footer */
-footer{
-/*  აქ 100% ს რო ვუწერ არ გადის მაინც */
-position: absolute;
-width: 100%;
-background: #262626;
-margin-top: 245px;
-text-align: center;
-padding: 60px 350px;
+footer {
+    background: #262626;
+    padding: 60px 0;
+    text-align: center;
 }
-.title2{
-font-family: 'Work Sans', sans-serif;
-font-weight: 600;
-font-size: 60px;
-line-height: 70px;
-color: #FFFFFF;
+
+.title2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
 }
-span{
+
+span {
     color: #DCB47A;
 }
-.article1{
-font-family: 'Work Sans', sans-serif;    
-font-weight: 400;
-font-size: 20px;
-line-height: 130%;
-color: rgba(255, 255, 255, 0.8);
-margin: 49px 0;
+
+.article1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 49px 0;
 
 }
-.footerbutton{
+
+.footerbutton_link .footerbutton {
     padding: 22px 60px;
     background: #DCB47A;
     border-radius: 60px;
     border-style: none;
-}
-.footerp{
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
